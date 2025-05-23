@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vision & Mission - Eco Roots Foundation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cormorant Garamond' rel='stylesheet'>
+
+    <style>
+
+  h3 {
+  font-family: 'Cormorant Garamond';
+  }
+  
+  h1 {
+  font-family: 'Cormorant Garamond';
+
+  }
+
+    p {
+   font-family: 'Source Sans Pro';
+  }
+        
+        body {
+          font-family: 'Source Sans Pro';
+        }
+      header {
+        background: #2b5d34;
+        color: white;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Keeps logo on left and nav on right */
+        height: 120px;
+      }
+
+      .logo img {
+        height: 100px; /* Adjust size */
+        width: auto;
+        margin-left: 20px; /* Adds space from left edge */
+      }
+
+      .nav-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); /* 6 columns */
+        grid-template-rows: repeat(2, auto); /* 2 rows */
+        gap: 3px; /* Space between items */
+        text-align: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 22px;
+      }
+      .nav-grid li {
+        text-align: center;
+      }
+
+      .nav-grid a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 15px 15px;
+      }
+      .header-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .header-image {
+        width: 70px;
+      }
+      .vision img {
+        width: 100%; /* Adjust width as needed */
+        display: block; /* Removes extra spacing */
+        margin: 0 auto; /* Centers the image */
+      }
+      .header-text {
+        font-size: 50px;
+      }
+      .header-para {
+        display: flex;
+        background-color: #ccb98b;
+        height: auto;
+        width: 80%;
+        max-width: 1200px; /* Ensure it doesn't get too large */
+        border-radius: 200px;
+        margin: 0px auto; /* This centers it horizontally */
+        justify-content: center; /* Centers the text inside */
+        align-items: center; /* Centers vertically inside the div */
+        text-align: center; /* Ensures text is centered */
+        padding: 10px; /* Adds some space inside */
+        overflow: hidden;
+        margin-bottom: 80px;
+      }
+      .mission {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 150px;
+        margin-right: 150px;
+      }
+      .mission h1 {
+        text-align: center;
+        font-size: 50px;
+      }
+
+      .mission img:last-of-type {
+        width: 400px;
+      }
+      .mission-content {
+        width: 50%;
+      }
+      .vertical {
+        height: 400px;
+        margin-top: -12px;
+        margin-bottom: -12px;
+      }
+      .principles p {
+        text-align: center;
+      }
+      .principles-grid1 p{
+        font-size: 16px;
+      }
+      .principles-grid2 {
+        font-size: 16px;
+      }
+      .principles h1 {
+        text-align: center;
+        font-size: 50px;
+      }
+      .principles-grid1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 100px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+      }
+      .principles-grid1 h3 {
+        text-decoration: underline;
+      }
+      .principles-grid2 h3 {
+        text-decoration: underline;
+      }
+      .principles-grid2 {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        margin-bottom: 100px;
+        text-align: center;
+      }
+      .principle1 {
+        background-color: #979797;
+        width: 20%;
+        height: 260px;
+        position: relative;
+        padding: 10px;
+
+      }
+      .principle2 {
+        background-color: #d0d1ae;
+        width: 20%;
+        height: 260px;
+        position: relative;
+        padding: 10px;
+      }
+      .principle3 {
+        background-color: #9ecbc6;
+        width: 20%;
+        height: 260px;
+        position: relative;
+        padding: 10px;
+      }
+      .principle4 {
+        background-color: #b5d1ae;
+        width: 20%;
+        height: 260px;
+        position: relative;
+        padding: 10px;
+      }
+      .principle5 {
+        background-color: #c7aed1;
+        width: 20%;
+        height: 260px;
+        position: relative;
+        padding: 10px;
+      }
+      footer {
+        background-color: #153F12;
+        color: #EEE5CE;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Keeps logo on left and nav on right */
+        height: 150px;
+        display: flex;
+      }
+      .middle {
+        text-align: center;
+      }
+
+      .principle2-img {
+        border-radius: 100%;
+        background-color: #F3F1EC;
+      }
+    
+      .principle3-img {
+        border-radius: 100%;
+        background-color: #F3F1EC;
+      }
+    
+      .principle4-img {
+        border-radius: 100%;
+        background-color: #F3F1EC;
+      }
+    
+      .principle5-img {
+        border-radius: 100%;
+        background-color: #F3F1EC;
+      }
+      .circle1 {
+  width: 80px; 
+  height: 80px;
+  background-color: #F3F1EC;
+  border-radius: 50%; /* Makes it a circle */
+  margin-right: 48%;
+  position: absolute; 
+  top: -50px;   /* Moves it up */
+  right: -30px; /* Moves it to the right */
+  background-image: url('10885592 1.png');
+  background-size: cover; /* Ensures the image covers the circle */
+  background-position: center;
+}
+.circle2 {
+    width: 80px; 
+  height: 80px;
+  background-color: #F3F1EC;
+  border-radius: 50%; /* Makes it a circle */
+  margin-right: 48%;
+  position: absolute; 
+  top: -50px;   /* Moves it up */
+  right: -30px; /* Moves it to the right */
+  background-image: url('ECOSYSTEM-ecosystem-climate-nature-ecology_and_environment-1024 1.png');
+  background-size: cover; /* Ensures the image covers the circle */
+  background-position: center;
+}
+.circle3 {
+    width: 80px; 
+  height: 80px;
+  background-color: #F3F1EC;
+  border-radius: 50%; /* Makes it a circle */
+  margin-right: 48%;
+  position: absolute; 
+  top: -50px;   /* Moves it up */
+  right: -30px; /* Moves it to the right */
+  background-image: url('ecology-eco-16-1024 1.png');
+  background-size: cover; /* Ensures the image covers the circle */
+  background-position: center;
+}
+.circle4 {
+    width: 80px; 
+  height: 80px;
+  background-color: #F3F1EC;
+  border-radius: 50%; /* Makes it a circle */
+  margin-right: 48%;
+  position: absolute; 
+  top: -50px;   /* Moves it up */
+  right: -30px; /* Moves it to the right */
+  background-image: url('5401157 1.png');
+  background-size: cover; /* Ensures the image covers the circle */
+  background-position: center;
+}
+.circle5 {
+    width: 80px; 
+  height: 80px;
+  background-color: #F3F1EC;
+  border-radius: 50%; /* Makes it a circle */
+  margin-right: 48%;
+  position: absolute; 
+  top: -50px;   /* Moves it up */
+  right: -30px; /* Moves it to the right */
+  background-image: url('earth-icon-with-leaf-line-icon-style-suitable-for-ecology-symbol-simple-design-editable-design-template-vector-removebg-preview 1.png');
+  background-size: 120%; /* Ensures the image covers the circle */
+  background-position: center;
+}
+.jalsparsh {
+    margin-right: 40px;
+}
+.principleheader::before {
+    position: absolute;
+    left: 490px;
+    top: 320px;
+    width: 50%;
+    height: 20px;
+    background-color: rgba(167, 197, 19, 0.6);
+    z-index: -1;
+    transform: translateY(-30%);
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="image-removebg-preview 1.png"
+          alt="Eco Roots Foundation Logo"
+        />
+      </div>
+      <nav>
+        <ul class="nav-grid">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Themes</a></li>
+          <li><a href="#">Programs</a></li>
+          <li><a href="#">Past</a></li>
+          <li><a href="#">Awards</a></li>
+          <li><a href="#">Partners</a></li>
+
+          <li><a href="#">Advisory Board</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Purpose</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Archive News</a></li>
+          <li><a href="#" class="shop">Shop</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="vision">
+        <img src="Vision img.png" alt="" />
+      </section>
+
+      <section class="header-section">
+        <img src="Idea Lightbulb.png" alt="" class="header-image" />
+        <h1 class="header-text">Vision Statement</h1>
+      </section>
+      <div class="header-para">
+        <p>
+          A society where every individual enjoys access to fundamental
+          necessities like health, education, and a sustainable environment, and
+          the youth embraces sustainable living practices. We are an
+          organization building on environmental wisdom with human development,
+          nurturing communities to flourish in harmony with nature and the roots
+          of sustainability and human progress intertwine seamlessly, fostering
+          biodiversity, regenerating ecosystems, and honoring the wisdom of
+          nature’s whispers.
+        </p>
+      </div>
+      <img src="Vision-Mission-1 1.png" alt="" />
+      <br />
+      <br />
+      <br />
+      <hr />
+
+      <section class="mission">
+        <container class="mission-content">
+          <h1>Mission Statement</h1>
+          <p>
+            To inspire and empower individuals to create a sustainable future
+            for all. Through innovative environmental education programs,
+            advocacy initiatives, and community engagement efforts, we strive to
+            foster a deep-rooted connection between humanity and nature. By
+            promoting sustainable living practices, advancing environmental
+            stewardship, and advocating for equitable access to essential
+            resources, we aim to build resilient communities that thrive in
+            harmony with the natural world. Together, we work towards a future
+            where every individual has the opportunity to lead a healthy,
+            prosperous life within a sustainable environment.
+          </p>
+        </container>
+        <hr class="vertical" />
+        <img src="Mission.png" alt="" />
+      </section>
+
+      <hr />
+      <br />
+      <section class="principles">
+        <div class="principleheader">
+            <h1>Our Guiding Principles</h1>
+        </div>
+        <p>
+          We are dedicated to deepening the connection between individuals and
+          the environment, reinforcing the critical importance of our natural
+          roots in sustaining life and shaping a verdant, thriving world. Rooted
+          in passion and guided by our vision and mission, our guiding
+          principles unfold as:
+        </p>
+        <div class="principles-grid1">
+          <div class="principle1">
+            <div class="circle1"></div>
+            <br>
+            <h3>Educating with Roots in Mind</h3>
+            <p>
+              Cultivating a deep-seated respect for nature through education,
+              emphasizing the importance of our roots — the fundamental
+              environmental principles that sustain life on earth.
+            </p>
+          </div>
+          <div class="principle2">
+            <div class="circle2"></div>
+            <br>
+            <h3>Innovating for Resilient Ecosystems</h3>
+            <p>
+              Forging new pathways for environmental problem-solving that are as
+              resilient and interconnected as the root systems of a forest,
+              fostering stability and vitality in our natural habitats.
+            </p>
+          </div>
+          <div class="principle3">
+            <div class="circle3"></div>
+            <br>
+            <h3>Conservation from the Ground Up</h3>
+            <p>
+              Initiating grassroots conservation efforts that protect and
+              nourish biodiversity, ensuring that the roots of our natural world
+              remain robust and life-giving.
+            </p>
+          </div>
+        </div>
+        <div class="principles-grid2">
+          <div class="principle4">
+            <div class="circle4"></div>
+            <br>
+            <h3>Advocacy with Depth</h3>
+            <p>
+              Digging deeper to advocate for policies and practices that
+              recognize the critical importance of maintaining the earth’s
+              foundational ecosystems, ensuring they are preserved for
+              generations to come
+            </p>
+          </div>
+          <div class="principle5">
+            <div class="circle5"></div>
+            <br>
+            <h3>Nurturing Sustainable Foundations</h3>
+            <p>
+              Encouraging the growth of sustainable livelihoods that are
+              grounded in ecological balance, providing communities with the
+              means to grow without uprooting the health of our planet.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="logo">
+        <img src="image-removebg-preview 1.png" alt="" />
+      </div>
+      <div class="middle">
+      <h4>Eco Roots Foundation</h4>
+      <p>
+        Address: 6 A, Pocket 6, MIG, Mayur Vihar, Phase 3, New Delhi - 110096 </p>
+        <p>Contact: +91 93126 26909, +91 7494941909 </p> 
+       <p>Email: ecorootsfoundation@gmail.com </p> 
+      </p>
+    </div>
+    <div class="jalsparsh"><img src="jal-sparsh- 1.png" alt=""></div> 
+    </footer>
+  </body>
+</html>
